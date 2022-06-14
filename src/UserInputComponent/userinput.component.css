@@ -1,0 +1,10 @@
+.red-box{
+    padding:10px;
+    border:1px solid red;
+    width:50px;
+}
+.green-box{
+    padding:10px;
+   border:1px solid lightgreen;
+    width:50px;
+}

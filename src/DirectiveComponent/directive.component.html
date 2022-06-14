@@ -1,0 +1,6 @@
+<button (click)="onToggle()">Display Details</button>
+<p *ngIf="isDisplay">This is a secret message</p>
+<ul *ngFor="let timestamp of clickCounter;let i=index">
+    <li *ngIf="i<5;else getColor;">{{timestamp}}</li>
+    <ng-template #getColor [ngStyle]="{'background-color': 'red'}">{{timestamp}}</ng-template>
+</ul>

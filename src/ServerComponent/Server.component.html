@@ -1,0 +1,3 @@
+<input type="text" (input)="getServerName($event)">
+<button [disabled]="!canAddNewServer" (click)="addNewServer()">Add New Server</button>
+<p>This is a server with ID:{{serverId}} and name as {{serverName}}</p>

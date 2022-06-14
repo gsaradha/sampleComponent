@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="username">
+<p [ngStyle]="{color:'green'}" [ngClass]="username===''?'red-box':'green-box'">{{username}}</p>
+<button [disabled]="username===''" (click)="username=''">Enter UserName</button>
+
+<!-- /*appTyrnGreen Directive to turn text to green  -->
